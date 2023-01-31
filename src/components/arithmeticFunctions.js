@@ -7,6 +7,7 @@ export function getMathHandler() {
     /***/
   
     function applyMath(math_str) {
+      math_str = math_str.replace(/ /g,'');
       divByZero = false;    
         
       let result = parseLinearMath(math_str);
